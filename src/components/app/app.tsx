@@ -1,33 +1,38 @@
 import * as React from "react";
-import { AppContainer } from "react-hot-loader";
-
-import { Header } from "../header/header";
+import { Score } from "../score/score";
+import { Switch } from "../switch/switch";
+import * as Styles from "./styles.css";
 
 export const tickRateMilliseconds = 1000;
 
-export class App extends React.Component<{}, { count: number; }> {
-  public state = { count: 0 };
-  private interval: number = -1;
-
-  public componentWillMount() {
-    this.interval = window.setInterval(
-      () => this.setState({ count: this.state.count + 1 }),
-      tickRateMilliseconds,
-    );
+export class App extends React.Component<
+  {},
+  {
+    score: number;
+    isOn: boolean;
   }
-
-  public componentWillUnmount() {
-    window.clearInterval(this.interval);
-  }
-
+> {
+  public state = { score: 0, isOn: false };
+  private clickSound = new Audio("click.wav");
   public render() {
     return (
-      <div>
-        <Header value="Hello world!" />
-        <div>
-          Welcome to the react/typescript boilerplate {this.state.count}
+      <div className={Styles.app}>
+        <div className={Styles.top}>
+          <Score score={this.state.score} />
+        </div>
+        <div className={Styles.center}>
+          <Switch isOn={this.state.isOn} toggle={this.toggle} />
         </div>
       </div>
     );
+  }
+  private toggle = () => {
+    this.clickSound.pause();
+    this.clickSound.currentTime = 0;
+    this.clickSound.play();
+    this.setState({
+      isOn: !this.state.isOn,
+      score: this.state.isOn ? 0 : 1,
+    });
   }
 }

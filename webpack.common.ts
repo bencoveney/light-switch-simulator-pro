@@ -111,6 +111,8 @@ export const configuration: Webpack.Configuration = {
 
     // Copy certain asset files to the output directory.
     new CopyPlugin([
+      { from: "assets/click.wav", to: "." },
+      { from: "assets/styles.css", to: "." },
       { from: "node_modules/reset-css/reset.css", to: "." },
       { from: "node_modules/mdi/fonts", to: "./mdi/fonts" },
       { from: "node_modules/mdi/css", to: "./mdi/css" },
@@ -130,6 +132,7 @@ export const configuration: Webpack.Configuration = {
     new IncludeAssetsPlugin({
       append: false,
       assets: [
+        "styles.css",
         "reset.css",
         "mdi/css/materialdesignicons.min.css",
       ],
