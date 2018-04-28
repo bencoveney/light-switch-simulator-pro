@@ -1,47 +1,124 @@
-.lightswitch {
-  width: 400px;
-  height: 400px;
-  background-color: tan;
-  border-radius: 30px;
-  border: 1px solid black;
-  box-shadow: inset 0 -3px 5px 5px rgba(0,0,0,1),
-    inset 0 3px 8px 8px rgba(255,255,255,1),
-    0px 2px 5px 5px rgba(0,0,0,0.5),
-    0px 2px 15px 15px rgba(0,0,0,0.25);
+.light-switch-light {
+  width: 300px;
+  height: 300px;
+  background: rgb(224,223,218);
+  background: radial-gradient(
+    circle,
+    rgba(224,223,218,1) 0%,
+    rgba(195,194,188,1) 100%);
+  border-radius: 15px;
+  border: 1px solid #393937;
+  box-shadow: inset 0 -3px 5px 5px rgba(133,132,126,1),
+    inset 0 3px 8px 8px rgba(250,248,237,1),
+    0px 2px 5px 5px rgba(0,0,0,0.35),
+    0px 2px 15px 15px rgba(0,0,0,0.15);
   display: flex;
   justify-content: space-around;
   align-items: center;
   user-select: none;
 }
 
-.button {
-  display: block;
-  border: 1px solid black;
-  border-radius: 20px;
-  height: 150px;
-  width: 75px;
-  box-shadow: inset 0 -3px 5px 5px rgba(0,0,0,1),
-    inset 0 3px 8px 8px rgba(255,255,255,1),
-    0px 0px 2px 2px rgba(0,0,0,0.5),
-    0px 0px 8px 8px rgba(0,0,0,0.25);
+.light-switch-dark {
+  width: 300px;
+  height: 300px;
+  background: rgb(197, 196, 189);
+  background: radial-gradient(
+    circle,
+    rgb(197, 196, 189) 0%,
+    rgb(153, 152, 146) 100%);
+  border-radius: 15px;
+  border: 1px solid #21211f;
+  box-shadow: inset 0 -3px 5px 5px rgba(97, 96, 90, 1),
+    inset 0 3px 8px 8px rgba(196, 194, 182, 1),
+    0px 2px 5px 5px rgba(0,0,0,0.35),
+    0px 2px 15px 15px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
 }
 
-.screw {
+.button-light {
   display: block;
-  border: 1px solid black;
-  border-radius: 20px;
-  height: 20px;
-  width: 20px;
+  border: 1px solid #393937;
+  border-radius: 10px;
+  height: 100px;
+  width: 50px;
+  background: rgb(224,223,218);
+  background: radial-gradient(
+    circle, rgba(224,223,218,1) 0%,
+    rgba(195,194,188,1) 100%);
+  box-shadow: inset 0 -3px 5px 5px rgba(133,132,126,1),
+    inset 0 3px 8px 8px rgba(250,248,237,1),
+    0px 0px 2px 2px rgba(0,0,0,0.35),
+    0px 0px 8px 8px rgba(0,0,0,0.15);
+}
+
+.button-dark {
+  display: block;
+  border: 1px solid #21211f;
+  border-radius: 10px;
+  height: 100px;
+  width: 50px;
+  background: rgb(197, 196, 189);
+  background: radial-gradient(
+    circle,
+    rgb(197, 196, 189) 0%,
+    rgb(153, 152, 146) 100%);
+  box-shadow: inset 0 -3px 5px 5px rgba(97, 96, 90, 1),
+    inset 0 3px 8px 8px rgba(196, 194, 182, 1),
+    0px 0px 2px 2px rgba(0,0,0,0.35),
+    0px 0px 8px 8px rgba(0,0,0,0.15);
+}
+
+.screw-light {
+  display: block;
+  border: 1px solid #2e3238;
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5),
-    0px 0px 8px 8px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.35),
+    0px 0px 8px 8px rgba(0,0,0,0.15);
+  transform: rotate(20deg);
+  background: rgb(177,184,196);
+  background: radial-gradient(
+    circle,
+    rgba(177,184,196,1) 0%,
+    rgba(73,78,87,1) 100%);
 }
 
-.screw::after {
+.screw-light::after {
   display: block;
-  border: 1px solid black;
+  border: 1px solid #2e3238;
+  width: 100%;
+  content: '';
+}
+
+.screw-dark {
+  display: block;
+  border: 1px solid #1d2024;
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.35),
+    0px 0px 8px 8px rgba(0,0,0,0.15);
+  transform: rotate(20deg);
+  background: rgb(50,54,61);
+  background: radial-gradient(
+    circle,
+    rgba(135,142,153,1) 0%,
+    rgba(50,54,61,1) 100%);
+}
+
+.screw-dark::after {
+  display: block;
+  border: 1px solid #1d2024;
   width: 100%;
   content: '';
 }

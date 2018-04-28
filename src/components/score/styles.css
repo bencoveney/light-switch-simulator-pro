@@ -1,6 +1,7 @@
 .score {
   width: 100%;
   text-align: right;
-  background-color: white;
+  background-color: rgba(23,23,23,0.8);
+  color: #d6d6d6;
   padding: 1em;
 }

@@ -1,7 +1,27 @@
-.app {
+.app-light {
   width: 100%;
   height: 100%;
-  background-color: green;
+  background: rgb(93,168,8);
+  background: radial-gradient(
+    circle,
+    rgba(93,168,8,1) 0%,
+    rgba(90,157,25,1) 14%,
+    rgba(57,97,6,1) 70%,
+    rgba(0,36,2,1) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-dark {
+  width: 100%;
+  height: 100%;
+  background: rgb(27,50,2);
+  background: radial-gradient(
+    circle,
+    rgba(27,50,2,1) 0%,
+    rgba(25,48,3,1) 14%,
+    rgba(21,37,1,1) 70%,
+    rgba(0,24,1,1) 100%);
   display: flex;
   flex-direction: column;
 }
