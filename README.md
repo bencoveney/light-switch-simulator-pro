@@ -1,4 +1,4 @@
-# light-switch-simulator-pro
+# Light Switch Simulator Pro
 
 Light Switch Simulation Game
 

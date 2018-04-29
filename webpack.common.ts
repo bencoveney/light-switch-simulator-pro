@@ -125,7 +125,7 @@ export const configuration: Webpack.Configuration = {
       chunksSortMode: "dependency",
       description: packageJson.description,
       template: resolvePath("./src/index.ejs"),
-      title: packageJson.name,
+      title: packageJson.title,
     }),
 
     // Include referenced assets in the templated index.html file.

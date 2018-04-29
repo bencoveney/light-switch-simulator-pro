@@ -1,5 +1,6 @@
 {
   "name": "light-switch-simulator-pro",
+  "title": "Light Switch Sim Pro",
   "version": "1.0.0",
   "description": "Light Switch Simulation Game",
   "main": "docs/bundle.js",
