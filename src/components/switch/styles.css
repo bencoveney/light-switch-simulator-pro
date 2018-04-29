@@ -44,12 +44,12 @@
   border-radius: 10px;
   height: 100px;
   width: 50px;
-  background: rgb(224,223,218);
-  background: radial-gradient(
-    circle, rgba(224,223,218,1) 0%,
-    rgba(195,194,188,1) 100%);
-  box-shadow: inset 0 -3px 5px 5px rgba(133,132,126,1),
-    inset 0 3px 8px 8px rgba(250,248,237,1),
+  background: rgb(133,132,126);
+  background: linear-gradient(
+    0deg,
+    rgb(170, 169, 164) 0%,
+    rgb(238, 236, 226) 100%);
+  box-shadow: inset 0 -5px 0px 0px rgb(128, 126, 120),
     0px 0px 2px 2px rgba(0,0,0,0.35),
     0px 0px 8px 8px rgba(0,0,0,0.15);
 }
@@ -60,13 +60,12 @@
   border-radius: 10px;
   height: 100px;
   width: 50px;
-  background: rgb(197, 196, 189);
-  background: radial-gradient(
-    circle,
-    rgb(197, 196, 189) 0%,
-    rgb(153, 152, 146) 100%);
-  box-shadow: inset 0 -3px 5px 5px rgba(97, 96, 90, 1),
-    inset 0 3px 8px 8px rgba(196, 194, 182, 1),
+  background: rgb(196,194,182);
+  background: linear-gradient(
+    0deg,
+    rgb(133, 131, 125) 0%,
+    rgba(196,194,182,1) 100%);
+  box-shadow: inset 0 5px 0px 0px rgb(143, 141, 134),
     0px 0px 2px 2px rgba(0,0,0,0.35),
     0px 0px 8px 8px rgba(0,0,0,0.15);
 }
