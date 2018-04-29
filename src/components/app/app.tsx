@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Score } from "../score/score";
 import { Switch } from "../switch/switch";
+import { Title } from "../title/title";
 import * as Styles from "./styles.css";
 
 export const tickRateMilliseconds = 1000;
@@ -23,6 +24,7 @@ export class App extends React.Component<
     const appStyle = this.state.isOn ? Styles.appLight : Styles.appDark;
     return (
       <div className={appStyle}>
+        <Title />
         <div className={Styles.top}>
           <Score
             highScore={this.state.highScore}

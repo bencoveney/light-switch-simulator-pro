@@ -8,7 +8,7 @@ export const Score: React.SFC<{
   { highScore, score },
 ) => (
   <div className={Styles.score}>
-    <span>Score: {score}</span>
-    <span>High Score: {highScore}</span>
+    Score: {score}<br />
+    High Score: {highScore}
   </div>
 );
