@@ -5,16 +5,16 @@
   right: 0;
   width: 100%;
   text-align: center;
-  color: rgb(64, 196, 126);
+  color: rgb(139, 196, 64);
   letter-spacing: 0.1em;
-  text-shadow: rgb(77, 252, 162) 1px 1px 0px,
-    rgb(77, 252, 162) -1px -1px 0px,
-    rgb(77, 252, 162) 1px -1px 0px,
-    rgb(77, 252, 162) -1px 1px 0px,
-    rgb(44, 137, 88) 4px 4px 8px,
-    rgb(44, 137, 88) -4px 4px 8px,
-    rgb(44, 137, 88) 4px -4px 8px,
-    rgb(44, 137, 88) -4px -4px 8px;
+  text-shadow: rgb(176, 252, 77) 1px 1px 0px,
+    rgb(176, 252, 77) -1px -1px 0px,
+    rgb(176, 252, 77) 1px -1px 0px,
+    rgb(176, 252, 77) -1px 1px 0px,
+    rgb(97, 137, 44) 4px 4px 8px,
+    rgb(97, 137, 44) -4px 4px 8px,
+    rgb(97, 137, 44) 4px -4px 8px,
+    rgb(97, 137, 44) -4px -4px 8px;
   text-decoration: none;
   background-color: rgba(23,23,23,0.8);
   padding: 1rem;
