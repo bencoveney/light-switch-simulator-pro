@@ -1,5 +1,3 @@
-// This file is the entry point for regular execution.
-
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
